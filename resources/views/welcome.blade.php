@@ -116,7 +116,7 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
+                        <div class="h2 fs-1 text-white mb-4">"Une appli taillée sur mesure pour le besoin du public congolais."</div>
                         <img src="{{ asset('assets/img/snapshots/kt-1.jpg') }}" alt="..." style="height: 16rem" />
                     </div>
                 </div>
@@ -133,18 +133,16 @@
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Device Mockups</h3>
-                                        <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop
-                                            required!</p>
+                                        <h3 class="font-alt">Confort</h3>
+                                        <p class="text-muted mb-0">Vous pouvez choisir le type de confort de véhicule qui vous convient et selon vos moyens.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Flexible Use</h3>
-                                        <p class="text-muted mb-0">Put an image, video, animation, or anything else in the
-                                            screen!</p>
+                                        <h3 class="font-alt">Proxymité</h3>
+                                        <p class="text-muted mb-0">Nous nous arrangeons pour qu'il y ait toujours un véhicule dans vos environs pour un service rapide.</p>
                                     </div>
                                 </div>
                             </div>
@@ -153,18 +151,16 @@
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Free to Use</h3>
-                                        <p class="text-muted mb-0">As always, this theme is free to download and use for
-                                            any purpose!</p>
+                                        <h3 class="font-alt">Reconnaissance faciale</h3>
+                                        <p class="text-muted mb-0">La technologie de reconnaissance faciale pour vous assurer qu'il s'agit d'un de nos conducteurs pour votre sécurité.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Open Source</h3>
-                                        <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it
-                                            commercially!</p>
+                                        <h3 class="font-alt">Porte-monnaie virtuel</h3>
+                                        <p class="text-muted mb-0">Vous pouvez garder votre argent dans votre porte-monnaie virtuel pour payer votre transport avec réduction.</p>
                                     </div>
                                 </div>
                             </div>
@@ -216,10 +212,8 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some
-                            information about your application, why it was built, the problem it solves, or anything else!
-                            There's plenty of space for text here, so don't worry about writing too much.</p>
+                        <h2 class="display-4 lh-1 mb-4">Une nouvelle façon de se déplacer</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Avec KinTaxi, nous nous assurons que vous soyez servi le plus rapidement possible ; tout en assurant votre sécurité ou celle de vos marchandises, et votre confort selon vos choix.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0">
