@@ -132,7 +132,7 @@
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi-hand-thumbs-up icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Confort</h3>
                                         <p class="text-muted mb-0">Vous pouvez choisir le type de confort de véhicule qui vous convient et selon vos moyens.</p>
                                     </div>
@@ -140,7 +140,7 @@
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi-people icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Proxymité</h3>
                                         <p class="text-muted mb-0">Nous nous arrangeons pour qu'il y ait toujours un véhicule dans vos environs pour un service rapide.</p>
                                     </div>
@@ -150,7 +150,7 @@
                                 <div class="col-md-6 mb-5 mb-md-0">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi-emoji-smile icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Reconnaissance faciale</h3>
                                         <p class="text-muted mb-0">La technologie de reconnaissance faciale pour vous assurer qu'il s'agit d'un de nos conducteurs pour votre sécurité.</p>
                                     </div>
@@ -158,7 +158,7 @@
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi-cash-coin icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Porte-monnaie virtuel</h3>
                                         <p class="text-muted mb-0">Vous pouvez garder votre argent dans votre porte-monnaie virtuel pour payer votre transport avec réduction.</p>
                                     </div>
@@ -213,7 +213,7 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Une nouvelle façon de se déplacer</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Avec KinTaxi, nous nous assurons que vous soyez servi le plus rapidement possible ; tout en assurant votre sécurité ou celle de vos marchandises, et votre confort selon vos choix.</p>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">KinTaxi s'assure que vous soyez servi le plus rapidement possible ; tout en préservant votre sécurité ou celle de vos marchandises, et votre confort selon vos choix et préférences.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0">
