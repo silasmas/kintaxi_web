@@ -255,11 +255,11 @@
             <div class="container px-5">
                 <div class="text-white-50 small">
                     <div class="mb-2">&copy; {{ date('Y') }} KinTaxi. Tous droits réservés.</div>
-                    <a href="#!">Politique de confidentialité</a>
+                    <a href="{{ route('privacy') }}">Politique de confidentialité</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Conditions d'utilisation</a>
+                    <a href="{{ route('terms') }}">Conditions d'utilisation</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">FAQ</a>
+                    <a href="{{ route('faq') }}">FAQ</a>
                 </div>
             </div>
         </footer>
