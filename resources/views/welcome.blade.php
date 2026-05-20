@@ -40,6 +40,7 @@
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Fontionnalités</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Téléchargement</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about') }}">A propos</a></li>
                     </ul>
                     <button class="btn ktx-btn-yellow px-3 mb-2 mb-lg-0 rounded-pill" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -255,11 +256,11 @@
             <div class="container px-5">
                 <div class="text-white-50 small">
                     <div class="mb-2">&copy; {{ date('Y') }} KinTaxi. Tous droits réservés.</div>
-                    <a href="{{ route('privacy') }}">Politique de confidentialité</a>
+                    <a href="{{ route('about', ['entity' => 'privacy']) }}">Politique de confidentialité</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="{{ route('terms') }}">Conditions d'utilisation</a>
+                    <a href="{{ route('about', ['entity' => 'terms']) }}">Conditions d'utilisation</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="{{ route('faq') }}">FAQ</a>
+                    <a href="{{ route('about', ['entity' => 'faq']) }}">FAQ</a>
                 </div>
             </div>
         </footer>

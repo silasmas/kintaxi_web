@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+
+    return redirect()->back();
+})->name('change_language');
 
 Route::get('/', function () {
     return view('welcome');
@@ -28,8 +36,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::view('/politique-de-confidentialite', 'legal.privacy')->name('privacy');
-Route::view('/conditions-dutilisation', 'legal.terms')->name('terms');
-Route::view('/faq', 'legal.faq')->name('faq'); // optionnel
+Route::get('/about/{entity?}', function ($entity = 'about') {
+    $titles = Lang::get('messages.' . $entity . '.titles');
 
-require __DIR__.'/auth.php';
+    return view('legal.' . $entity, [
+        'entity' => $entity,
+        'titles' => $titles,
+    ]);
+})->name('about');
+
+// Route::view('/politique-de-confidentialite', 'legal.privacy')->name('privacy');
+// Route::view('/conditions-dutilisation', 'legal.terms')->name('terms');
+// Route::view('/faq', 'legal.faq')->name('faq');
+
+require __DIR__ . '/auth.php';
