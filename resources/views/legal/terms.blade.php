@@ -22,6 +22,9 @@
                     <div id="privacyContent" class="col-lg-8 col-md-7 col-sm-7 col-12">
                         <h1>@lang('messages.terms.title')</h1>
                         <p>@lang('messages.terms.description')</p>
+                        @if (!empty(__('messages.terms.updated_at')))
+                        <p class="text-muted"><small>@lang('messages.updated_at') : {{ __('messages.terms.updated_at') }}</small></p>
+                        @endif
 
 @forelse ($titles as $title)
                         <h3 id="{{ $title['ref'] }}">{!! $title['title'] !!}</h3>
