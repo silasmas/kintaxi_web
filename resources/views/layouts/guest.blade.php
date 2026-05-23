@@ -46,8 +46,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="/">Accueil</a></li>
-@if (Route::is('about') && $entity != 'about')
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="/">@lang('miscellaneous.menu.home')</a></li>
+@if (Route::is('contact'))
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about') }}">@lang('miscellaneous.menu.about')</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about', ['entity' => 'terms']) }}">@lang('miscellaneous.menu.terms_of_use')</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about', ['entity' => 'privacy']) }}">@lang('miscellaneous.menu.privacy_policy')</a></li>
+@elseif (Route::is('about') && isset($entity) && $entity != 'about')
     @if ($entity == 'terms')
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about') }}">@lang('miscellaneous.menu.about')</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about', ['entity' => 'privacy']) }}">@lang('miscellaneous.menu.privacy_policy')</a></li>
@@ -68,6 +72,7 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about', ['entity' => 'terms']) }}">@lang('miscellaneous.menu.terms_of_use')</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about', ['entity' => 'privacy']) }}">@lang('miscellaneous.menu.privacy_policy')</a></li>
 @endif
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('contact') }}">@lang('miscellaneous.menu.contact')</a></li>
                     </ul>
                 </div>
 
@@ -143,6 +148,8 @@
                     <a href="{{ route('about', ['entity' => 'terms']) }}">Conditions d'utilisation</a>
                     <span class="mx-1">&middot;</span>
                     <a href="{{ route('about', ['entity' => 'faq']) }}">FAQ</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="{{ route('contact') }}">@lang('miscellaneous.menu.contact')</a>
                 </div>
             </div>
         </footer>

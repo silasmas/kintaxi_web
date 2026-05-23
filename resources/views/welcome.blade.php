@@ -42,12 +42,12 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Téléchargement</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('about') }}">A propos</a></li>
                     </ul>
-                    <button class="btn ktx-btn-yellow px-3 mb-2 mb-lg-0 rounded-pill" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    <a class="btn ktx-btn-yellow px-3 mb-2 mb-lg-0 rounded-pill" href="{{ route('contact') }}">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
                             <span class="small">Contact</span>
                         </span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -261,92 +261,14 @@
                     <a href="{{ route('about', ['entity' => 'terms']) }}">Conditions d'utilisation</a>
                     <span class="mx-1">&middot;</span>
                     <a href="{{ route('about', ['entity' => 'faq']) }}">FAQ</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="{{ route('contact') }}">Contact</a>
                 </div>
             </div>
         </footer>
-        <!-- Feedback Modal-->
-        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Donnez votre avis</h5>
-                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body border-0 p-4">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text"
-                                    placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nom complet</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Le nom est obligatoire.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                    data-sb-validations="required,email" />
-                                <label for="email">Adresse e-mail</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Le mail est obligatoire.
-                                </div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Ce mail n'est pas valide.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                    data-sb-validations="required" />
-                                <label for="phone">N° de téléphone</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Le n° de téléphone est obligatoire.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                                    style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Le message est obligatoire.
-                                </div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Message envoyé!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Erreur d'envoi de message!</div>
-                            </div>
-                            <!-- Submit Button-->
-                            <div class="d-grid">
-                                <button class="btn ktx-btn-yellow rounded-pill btn-lg" id="submitButton" type="submit">Envoyer</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
